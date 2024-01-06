@@ -76,13 +76,13 @@ PhyloP-Conservation/PC-candidates-transdecoder-PhyloP-Over3-CRE-Superfile.tab
 * 194 do, 2/3's of the set. 115 do not have an intersect.   
 * `awk '{print $11, $17}' | sort -k2,2 -rn |` to parse transcript ID and conservation score.     
 
-`less -S Superfile_Cov_finale-3.tab | cut -d" " -f5 | sort | uniq | fgrep -w -f
+```less -S Superfile_Cov_finale-3.tab | cut -d" " -f5 | sort | uniq | fgrep -w -f
 -
 ../../../StringTie/long-read/RC-and-EXT/gffcompare/unknown/no-annotation-truly/true-unknown.gtf
 | awk '$3 == "transcript" {print $0}' | gtf2bed - | bedtools intersect -a - -b
 $CRE -wb | less -S | awk '{print $11}' | sort | uniq | sed 's/["";]//g' | fgrep
 -w -v -f - PhyloP-Conservation/PC-candidates-transdecoder-PhyloP.bed >
-PhyloP-Conservation/PC-candidates-transdecoder-PhyloP-Over3-NOCRE-Superfile.tab`         
+PhyloP-Conservation/PC-candidates-transdecoder-PhyloP-Over3-NOCRE-Superfile.tab```      
 
 
 * A few examples
