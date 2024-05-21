@@ -1649,13 +1649,6 @@ Immediate
 
 Protein-coding candidates.      
 
-
-**Orthogonal transcript reconstruction**    
-- Run bambu program and perform intersect to check how many of the transcripts
-are reconstructed in it also. Any amount of overlap is sufficient as I'm trying
-to detect transcriptional activity from the locus itself - even if the gene
-structure varies (to a degree ofcourse).  
-
 Final Wrap Up    
 - SQANTI for quality control reports and potentially additional features. 
 
@@ -1696,10 +1689,3 @@ degradation signal. Take upstream sequence of the pseudogene, and perform a
 hexamer enrichment/scan to identify any potential cleavage/degradation signal?   
 - Align the ends of the pseudogenes 
 - ONT sequences 3' to 5' and thus, it captures the poly-Adenylated pseudogene fragment before it is potentially degraded? One advantage of ONT.     
-
-
-EVENTUALLY
-- Eventually make an SQL database for the "Superfile"?
-- Validate these novel transcripts -> a sample from each category, and ultimately in the case of peptide coders, get some protein evidence!!    
-- Write prelim Methods section    
-
